@@ -1,0 +1,4 @@
+<h1>What's on your mind?</h1>
+    <input [(ngModel)]="newTaskDescription" placeholder="New task">
+    <button (click)="addTask()">Add</button>
+    <task-component *ngFor="let task of tasks" [task]="task"></task-component>
